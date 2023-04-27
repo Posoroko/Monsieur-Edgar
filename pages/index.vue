@@ -4,21 +4,51 @@
 
     <section class="mainWidth flex column gap50">
         <div class="bodyTitleAndParagraph">
-            <h2 class="bodyH2">
+            <p class="bodyH2">
                 Présentez vos services d'une façon claire
-            </h2>
+            </p>
 
             <p class="bodyText shortWidth">
-                La façon dont un utilisateur interagit et expérimente votre site Web déterminera votre impact. 
-                L'utilité, la facilité d'utilisation et l'efficacité sont essentielles. Nuxt est construit 
-                avec un ensemble de fonctionnalités qui rendent cela possible.
+                La façon dont un utilisateur interagit et expérimente votre site Web déterminera votre impact. Nous construisons des interfaces
+                facile d'utilisation et ergonomiques pour que vos clients accèdent à vos services de façon intuitive.  Nous vous accompagnons à chaque étape
+                pour maîtriser chaque détail de votre projet.
             </p>
         </div>
 
+        <h2 class="bodyH2 marTop20 flex justifyCenter">Nos services</h2>
+
         <CardBox01Main />
+    </section>
+
+    <div class="bodySceneBox mainWidth flex justifyCenter">
+        <img src="/images/body-scene.png" class="bodyScene" alt="">
+    </div>
+
+    <section class="mainWidth flex column gap50">
+        <div class="bodyTitleAndParagraph">
+            <p class="bodyH2">
+                Présentez vos services d'une façon claire
+            </p>
+
+            <p class="bodyText shortWidth">
+                La façon dont un utilisateur interagit et expérimente votre site Web déterminera votre impact. Nous construisons des interfaces
+                facile d'utilisation et ergonomiques pour que vos clients accèdent à vos services de façon intuitive.  Nous vous accompagnons à chaque étape
+                pour maîtriser chaque détail de votre projet.
+            </p>
+        </div>
+
+        <h2 class="bodyH2 marTop20 flex justifyCenter">Nos engagements</h2>
+
+        <CardBox02Main />
     </section>
 </template>
 
 <style scoped>
-
+.bodySceneBox {
+    height: 50vh;
+    margin: 50px auto;
+}
+.bodySceneBox img {
+    height: 100%;
+}
 </style>

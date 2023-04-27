@@ -25,6 +25,10 @@ const tabs = [
     {
         name: 'contact',
         link: '/contact'
+    },
+    {
+        name: 'à propos',
+        link: '/a-propos'
     }
 ]
 </script>

@@ -22,7 +22,7 @@
     width: min(100%, 700px);
 }
 .homeScene {
-    width: 600px;
+    width: 700px;
 }
 @media (max-width: 600px) {
     .homeScene {

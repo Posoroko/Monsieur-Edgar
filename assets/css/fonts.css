@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@font-face {
-    font-family: 'avant-g-book';
-    src: url('@/assets/fonts/avant-g-book.ttf');
-}
-
-@font-face {
-    font-family: 'avant-g-medium';
-    src: url('@/assets/fonts/avant-g-medium.ttf');
-}
-
-@font-face {
-    font-family: 'avant-garde-gothic-2-bold-1';
-    src: url('@/assets/fonts/avant-garde-gothic-2-bold-1.otf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 .icon {
     font-family: 'Material Icons';
@@ -23,6 +10,9 @@
 .raleway {
     font-family: 'Raleway', sans-serif;
     border: 1px solid red;
+}
+.quickSand {
+    font-family: 'Quicksand', sans-serif;
 }
 * {
     color: var(--text-main-color);
@@ -34,6 +24,7 @@
     line-height: 70px;
 }
 .headerText {
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     line-height: 35px;
     font-weight: 500;
@@ -46,9 +37,11 @@
 }
 .bodyH2 {
     font-size: 36px;
+    font-weight: 600;
     line-height: 40px;
 }
 .bodyText {
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 35px;
