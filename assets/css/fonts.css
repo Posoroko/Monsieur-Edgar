@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'avant-g-book';
+    src: url('@/assets/fonts/avant-g-book.ttf');
+}
+
+@font-face {
+    font-family: 'avant-g-medium';
+    src: url('@/assets/fonts/avant-g-medium.ttf');
+}
+
+@font-face {
+    font-family: 'avant-garde-gothic-2-bold-1';
+    src: url('@/assets/fonts/avant-garde-gothic-2-bold-1.otf');
+}
+
+.icon {
+    font-family: 'Material Icons';
+    user-select: none;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid red;
+}
+* {
+    color: var(--text-main-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.headerMainTitle {
+    font-size: 72px;
+    line-height: 70px;
+}
+.headerText {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.bodyTitleAndParagraph {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bodyH2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+.bodyText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.cardTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.cardText {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(204, 204, 204);
+    font-weight: 400;
+}

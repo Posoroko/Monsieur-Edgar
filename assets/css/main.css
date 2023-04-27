@@ -1,0 +1,26 @@
+:root {
+    --dark-blue: #01101c;
+}
+
+body {
+    /* background-color: var(--bg-main); */
+    background: radial-gradient(circle, rgb(10, 20, 20) 0%, rgba(7, 14, 19, 1) 100%);
+}
+
+a {
+    cursor: pointer;
+}
+.mainWidth {
+    width: min(1500px, 100%);
+    padding: 030px;
+    margin: auto;
+}
+.shortWidth {
+    width: min(1000px, 100%);
+}
+
+.header {
+    /* height: 60vh; */
+    padding: 20vh 20px;
+}
+

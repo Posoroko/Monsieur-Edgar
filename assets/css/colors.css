@@ -1,0 +1,18 @@
+:root {
+    --bg-main: #070e13;
+    --bg-secondary: #142726;
+
+    --funfy-main: #d8b92d;
+
+    --text-main-color: #fff;
+    --text-secondary-color: #d3d3d3;
+}
+
+.textMainColor {
+    color: var(--text-main-color);
+}
+
+.textMainColor.hover:hover {
+    color: var(--text-secondary-color);
+
+}
