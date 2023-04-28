@@ -27,7 +27,7 @@
     <section class="mainWidth flex column gap50">
         <div class="bodyTitleAndParagraph">
             <p class="bodyH2">
-                Présentez vos services d'une façon claire
+                On vous accompagne pour vous rendre la vie facile.
             </p>
 
             <p class="bodyText shortWidth">
