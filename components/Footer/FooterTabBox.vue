@@ -25,10 +25,10 @@ const tabs = [
         name: 'mentions légales',
         link: '/mentions-legales'
     },
-    {
-        name: 'plan du site',
-        link: '/plans-du-site'
-    }
+    // {
+    //     name: 'plan du site',
+    //     link: '/plans-du-site'
+    // }
 ]
 </script>
 

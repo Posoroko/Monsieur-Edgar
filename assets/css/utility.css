@@ -69,7 +69,9 @@
 .objectFitContain {width: 100%;height: 100%;object-fit: contain;}
 
 
-.marTop20 {margin-top: min(20px, 1.5vw);}
+.marTop5 {margin-top: min(5px, 0.5vw);}
+.marTop10 {margin-top: min(10px, 1vw);}
+.marTop20 {margin-top: min(20px,0.9vw);}
 .marTop50 { margin-top: min(50px, 4vw); }
 .marTop100 { margin-top: min(100px, 6vw); }
 .marTop150 { margin-top: min(150px, 8vw);}
@@ -103,6 +105,15 @@
 .weight7 {font-weight: 700;}
 .weight8 {font-weight: 800;}
 .Weight9 {font-weight: 900;}
+
+.fS10 { font-size: 10px; }
+.fS12 { font-size: 12px; }
+.fS14 { font-size: 14px; }
+.fS16 { font-size: 16px; }
+.fS18 { font-size: 18px; }
+.fS20 { font-size: 20px; }
+.fS22 { font-size: 22px; }
+.fS24 { font-size: 24px; }
 
 .noEvents_kidsEvents  {
     pointer-events: none;

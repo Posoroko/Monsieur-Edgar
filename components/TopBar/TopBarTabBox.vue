@@ -1,9 +1,7 @@
 <template>
-    <div class="button1 relative centered" :class="{ 'active' : route.path == tab.link}" v-for="tab in tabs" :key="tab.name">
-        <NuxtLink class="text" :to="tab.link">
-            {{ tab.name }}
-        </NuxtLink>
-    </div>
+    <NuxtLink :to="tab.link" class="button1 relative centered" :class="{ 'active': route.path == tab.link }" v-for="tab in tabs" :key="tab.name">
+        <span class="text">{{ tab.name }}</span>
+    </NuxtLink>
 </template>
 
 <script setup>

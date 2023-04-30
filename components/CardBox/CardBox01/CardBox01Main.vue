@@ -2,21 +2,25 @@
     <CardBoxMain>
 
         <div class="flex justifyCenter gap20 wrap" >
-            <CardBoxCard :title="cardsContent.design.title" :text="cardsContent.design.text">
-                <IconDesign />
-            </CardBoxCard>
+            <div class="flex justifyCenter gap20 wrap">
+                <CardBoxCard :title="cardsContent.design.title" :text="cardsContent.design.text">
+                    <IconDesign />
+                </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.developpement.title" :text="cardsContent.developpement.text">
-                <IconDeveloppement />
-            </CardBoxCard>
+                <CardBoxCard :title="cardsContent.developpement.title" :text="cardsContent.developpement.text">
+                    <IconDeveloppement />
+                </CardBoxCard>
+            </div>
 
-            <CardBoxCard :title="cardsContent.hebergement.title" :text="cardsContent.hebergement.text">
-                <IconHebergement />
-            </CardBoxCard>
+            <div class="flex justifyCenter gap20 wrap">
+                <CardBoxCard :title="cardsContent.hebergement.title" :text="cardsContent.hebergement.text">
+                    <IconHebergement />
+                </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.conseil.title" :text="cardsContent.conseil.text">
-                <IconHands />
-            </CardBoxCard>
+                <CardBoxCard :title="cardsContent.conseil.title" :text="cardsContent.conseil.text">
+                    <IconHands />
+                </CardBoxCard>
+            </div>
         </div>
 
     </CardBoxMain>

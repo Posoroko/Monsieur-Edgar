@@ -1,7 +1,7 @@
 <template>
     <div class="tarifCardBox flex column gap10">
         <div class="topBox flex column alignCenter gap10">
-            <h2 class="serviceTitle flex justifyCenter alignCenter">
+            <h2 class="tarifTitle flex justifyCenter alignCenter">
                 {{ title }}
             </h2>
 
@@ -14,7 +14,20 @@
             </p>
         </div>
         
-        <div class="tarifCard flex column">
+        <div class="tarifCard flex column" v-if="!customText">
+            <ul class="specList">
+                <li class="specLineBox" v-for="spec in specs">
+                    <span class="specLineContent flex justifyStart gap20"  v-if="spec.value">
+                        <span class="specLineContentText flex alignCenter gap10">
+                            <span class="specLineText raleway">{{ spec.text }}</span>
+                        </span>
+                        <span class="specLineIcon iconOutlined specCheck centered">check_circle</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tarifCard flex column" v-if="customText">
             <ul class="specList">
                 <li class="specLineBox" v-for="spec in specs">
                     <span class="specLineContent flex justifyStart gap20"  v-if="spec.value">
@@ -33,9 +46,10 @@
 
 const props = defineProps({
     title: String,
-    specs: Array,
     price: Number,
-    topCardText: String
+    topCardText: String,
+    specs: Array,
+    customText: String
 })
 console.log(props.specs)
 
@@ -44,16 +58,22 @@ console.log(props.specs)
 <style scoped>
 .tarifCardBox {
     width: min(90vw, 350px);
-    /* height: min(90vh, 500px); */
+    background-color: var(--bg-secondary);
     padding: 10px;
-    border: 1px solid var(--border-color-1);
     border-radius: 10px;
 }
 .tarifCard {
-    background-color: var(--bg-secondary);
-    border-radius: 10px;
+    /* background-color: var(--bg-main); */
+    border-radius: 5px;
     padding: 10px;
     flex-grow: 1;
+}
+
+.tarifTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color-1);
+    padding: 10px 0;
 }
 .topBoxText {
     font-size: 14px;
