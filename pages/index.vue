@@ -2,7 +2,7 @@
 <template>
     <HomeHeaderMain />
 
-    <section class="mainWidth flex column gap50">
+    <section class="mainWidth flex column gap50 marTop100">
         <div class="bodyTitleAndParagraph">
             <p class="bodyH2">
                 Vos services présentés de façon claire.
@@ -46,7 +46,7 @@
 <style scoped>
 .bodySceneBox {
     height: 50vh;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 .bodySceneBox img {
     height: 100%;

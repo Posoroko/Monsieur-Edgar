@@ -1,6 +1,6 @@
 :root {
     --dark-blue: #01101c;
-    --mainWidth: min(1400px, 100%);
+    --mainWidth: 1400px;
 }
 
 body {
@@ -11,12 +11,12 @@ a {
     cursor: pointer;
 }
 .mainWidth {
-    width: var(--main-width);
+    width: min(1400px, 100%);
     padding: 0 30px;
     margin: auto;
 }
 .smallWidth {
-    width: calc(min(1400px, 100%) * 0.75);
+    width: min(calc(1400px * 0.6), 98vw);
 }
 .shortWidth {
     width: min(1000px, 100%);
@@ -24,9 +24,13 @@ a {
 
 .header {
     /* height: 60vh; */
-    padding: 20vh 20px;
+    padding: 15vh 20px;
 }
 
 main {
     min-height: 100vh;
+}
+
+.triangles {
+    opacity: 0.1;
 }

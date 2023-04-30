@@ -9,7 +9,7 @@
                 <span class="text">à partir de</span> &nbsp <span class="price">{{ price }}€</span>
             </p>
 
-            <p class="topBoxText">
+            <p class="topBoxText bodyText">
                 {{  topCardText }}
             </p>
         </div>
@@ -70,10 +70,11 @@ console.log(props.specs)
 }
 
 .tarifTitle {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--text-color-1);
     padding: 10px 0;
+    border-bottom: 1px solid var(--border-color-1);
 }
 .topBoxText {
     font-size: 14px;

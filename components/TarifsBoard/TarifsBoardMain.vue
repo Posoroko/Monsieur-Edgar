@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="marTop50">
         <div class="tarifsBoard flex justifyCenter gap20 wrap">
             <TarifsBoardCard 
                 :title="standardContent.title" 
