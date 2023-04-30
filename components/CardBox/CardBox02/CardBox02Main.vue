@@ -24,8 +24,8 @@ const cardsContent = {
     design: {
         id: "1",
         image: null,
-        title: "Service Rapide",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        title: "Service humain",
+        text: "Une entreprise locale, passionnée par le fait-main, partenaire des travailleurs indépendants.",
     },
     developpement: {
         id: "2",

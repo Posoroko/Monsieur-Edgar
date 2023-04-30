@@ -6,6 +6,8 @@
 
     --text-main-color: #fff;
     --text-secondary-color: #d3d3d3;
+
+    --border-color-1: rgba(255, 255, 255, 0.247);
 }
 
 .textMainColor {

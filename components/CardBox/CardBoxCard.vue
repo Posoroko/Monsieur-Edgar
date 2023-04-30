@@ -40,7 +40,7 @@ const props = defineProps({
     transition: 300ms ease;
 }
 .card:hover {
-    outline: 2px solid rgba(255, 255, 255, 0.247);
+    outline: 2px solid var(--border-color-1);
     transition: 600ms ease;
 }
 .card:hover .imageFrame {

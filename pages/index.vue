@@ -5,11 +5,11 @@
     <section class="mainWidth flex column gap50">
         <div class="bodyTitleAndParagraph">
             <p class="bodyH2">
-                Présentez vos services d'une façon claire
+                Vos services présentés de façon claire.
             </p>
 
             <p class="bodyText shortWidth">
-                La façon dont un utilisateur interagit et expérimente votre site Web déterminera votre impact. Nous construisons des interfaces
+                La façon dont un utilisateur interagit et expérimente votre site web déterminera votre impact. Nous construisons des interfaces
                 facile d'utilisation et ergonomiques pour que vos clients accèdent à vos services de façon intuitive.  Nous vous accompagnons à chaque étape
                 pour maîtriser chaque détail de votre projet.
             </p>

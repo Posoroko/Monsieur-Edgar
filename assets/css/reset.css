@@ -12,3 +12,6 @@ button {
     box-sizing: border-box;
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}

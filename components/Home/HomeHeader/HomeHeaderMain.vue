@@ -3,10 +3,7 @@
         <div class="leftBox flex column gap50">
             <h1 class="headerMainTitle">Service complet pour votre projet de site web.</h1>
             <p class="headerText">
-                Monsieur Edgar vous aide à créer votre site web et développer votre visibilité en ligne.  
-                Un site accueillant 
-                et agréable à utiliser améliore l'expérience de vos visiteurs et vous 
-                permet de vous démarquer.
+                Monsieur Edgar vous aide à développer votre visibilité en ligne en créant le site web qui vous ressemble. 
             </p>
         </div>
 

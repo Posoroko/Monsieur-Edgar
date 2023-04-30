@@ -6,7 +6,7 @@
                 <IconDesign />
             </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.developpement.title" :text="cardsContent.design.text">
+            <CardBoxCard :title="cardsContent.developpement.title" :text="cardsContent.developpement.text">
                 <IconDeveloppement />
             </CardBoxCard>
 
@@ -29,25 +29,25 @@ const cardsContent = {
         id: "1",
         image: null,
         title: "Design",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Offrez une expérience client réussie grâce à un site web moderne, clair et unique.",
     },
     developpement: {
         id: "2",
         image: null,
         title: "Développement",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Un code artisanal et intelligent, pour un site performant s'adaptant à tous les écrans.",
     },
     hebergement: {
         id: "3",
         image: null,
         title: "Hébergement",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Votre site web hébergé par nos soins pour que vos données restent entre de bonnes mains.",
     },
     conseil: {
         id: "4",
         image: null,
         title: "Conseil",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Étudions ensemble vos objectifs et trouvons la solution adaptée à vos besoins.",
     }
 }
 
