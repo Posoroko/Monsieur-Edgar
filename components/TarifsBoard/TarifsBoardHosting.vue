@@ -1,6 +1,6 @@
 <template>
-    <h1 class="tarifTitle centered marTop20">hébergement</h1>
-    <div class="flex justifyCenter alignCenter gap20">
+    <h1 class="bodyH2 centered marTop50">hébergement</h1>
+    <div class="flex justifyCenter alignCenter gap20 marTop20">
         <p>facturation: </p> 
         <p class="button1 centered" :class="{'active' : planType == 'monthly'}" @click="planType = 'monthly'">mensuel</p>
         <p class="button1 centered" :class="{ 'active': planType == 'yearly' }" @click="planType = 'yearly'">annuel</p>
@@ -73,10 +73,5 @@ const plans = {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
-.tarifTitle {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-color-1);
-    padding: 10px 0;
-}
+
 </style>

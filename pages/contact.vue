@@ -129,7 +129,7 @@ const handleContactChoice = (choice) => {
 }
 .contactHeader,
 .contactForm {
-    width: min(90vw, 500px);
+    width: min(90vw, 600px);
     margin: auto;
 }
 .contactFormLine {
@@ -172,7 +172,7 @@ textarea.contactFormLineInput {
     gap: 20px;
 }
 .contactSeperator {
-    width: min(90vw, 500px);
+    width: min(90vw, 600px);
     border: 1px solid var(--bg-secondary);
     margin: auto;
 }

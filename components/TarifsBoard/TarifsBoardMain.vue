@@ -1,6 +1,7 @@
 <template>
     <div class="marTop50">
-        <div class="tarifsBoard flex justifyCenter gap20 wrap">
+        <h1 class="bodyH2 centered marTop20">développement</h1>
+        <div class="tarifsBoard marTop20 flex justifyCenter gap20 wrap">
             <TarifsBoardCard 
                 :title="standardContent.title" 
                 :price="standardContent.price" 
