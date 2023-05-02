@@ -34,14 +34,14 @@
                         <span class="specLineContentText flex alignCenter gap10">
                             <span class="specLineText raleway">{{ spec.text }}</span>
                         </span>
-                        <a href="#detailBox"></a>
-                        <span class="specLineIcon iconOutlined specCheck centered">check_circle</span>
+                        
+                        <span>check_circle</span>
                     </span>
                 </li>
             </ul>
         </div>
-        <div class="detailBox centered">
-            <p class="button1 textAlignCenter">en savoir plus ...</p>
+        <div class="detailBox flex justifyCenter">
+            <a class="detailButton flex alignCenter gap5" href="#detailBox">en savoir plus <span class="icon">arrow_downward</span></a>
         </div>
     </div>
 </template>
@@ -60,6 +60,20 @@ console.log(props.specs)
 </script>
 
 <style scoped>
+.detailButton {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--bg-main);
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.detailButton:hover {
+    color: var(--bg-main);
+    background-color: var(--funky-main);
+}
+.detailButton:hover .icon{
+    color: var(--bg-main);
+}
 .tarifCardBox {
     width: min(90vw, 350px);
     background-color: var(--bg-secondary);

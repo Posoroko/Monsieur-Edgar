@@ -18,7 +18,7 @@ import { TarifsBoardMain } from '~/.nuxt/components';
     <main class="tarifMain mainWidth flex column alignCenter">
         <TarifsBoardMain />
 
-        <section class="mainWidth flex justifyCenter marTop50">
+        <section id="detailBox"  class="mainWidth flex justifyCenter marTop50">
             <ul class="smallWidth flex column gap20">
                 <li class="marTop50">
                     <h3 class="bodyH3">Sites standards</h3>
