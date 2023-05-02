@@ -36,18 +36,18 @@
 const standardContent = {
     title: "Site standard",
     price: 750,
-    topCardText: "Tout ce dont vous avez besoin pour être présent en ligne et rejoindre vos clients efficacement.  Vous choisissez un modèle de site qu'on adaptera à votre image."
+    topCardText: "Toutes les pages nécessaires à la présentation de votre activité et de vos services dans une interface claire et ergonomique."
     }
 const premiumContent = {
     title: "Site premium",
     price: 1150,
-    topCardText: "En plus des pages de base, faites connaître votre trvail grace à une galerie photo ou un portefolio que vous gérez avec une interface admin personnelle.  "
+    topCardText: "Les pages de vtre choix pour la promotion de votre activité, ainsi qu'un espace administrateur facile d'utilisation.  "
 }
 
 const customContent = {
     title: "Site personnalisé",
     price: 1750,
-    topCardText: "Vous avez des besoins ou des envies spécifiques?  Nous pouvons vous proposons un design, une chartre graphoque et un logo à l'image de votre entreprise."
+    topCardText: "Vous avez des besoins spécifiques ? Toutes les pages de votre choix, un espace administrateur ainsi qu'une charte graphique à l'image de votre entreprise."
 }
 
 const standardSpecs = [
@@ -62,7 +62,7 @@ const standardSpecs = [
         icon: "description"
     },
     {
-        text: "Une page pour chacunde vos services",
+        text: "Une page par service",
         value: true,
         icon: "description"
     },
@@ -72,7 +72,7 @@ const standardSpecs = [
         icon: "description"
     },
     {
-        text: "Thème standard",
+        text: "Modèle standard au choix",
         value: true
     },
     {
@@ -81,7 +81,7 @@ const standardSpecs = [
         icon: "description"
     },
     {
-        text: "Interface admin",
+        text: "Espace administrateur",
         value: false
     },
     {
@@ -118,7 +118,7 @@ const standardSpecs = [
 ]
 const premiumSpecs = [
     {
-        text: "Page d'ccueil",
+        text: "Page d'accueil",
         value: true,
         icon: "description"
     },
@@ -128,7 +128,7 @@ const premiumSpecs = [
         icon: "description"
     },
     {
-        text: "Une page pour chacunde vos services",
+        text: "Une page par service",
         value: true,
         icon: "description"
     },
@@ -138,7 +138,7 @@ const premiumSpecs = [
         icon: "description"
     },
     {
-        text: "Thème premium",
+        text: "Modèle premium au choix",
         value: true
     },
     {
@@ -147,18 +147,18 @@ const premiumSpecs = [
         icon: "description"
     },
     {
-        text: "Interface admin",
+        text: "Espace administrateur",
         value: true
     },
     {
-        text: "Possibilité d'ajouter d'autre pages (frais en sus)",
+        text: "Possibilité d'ajouter d'autres pages (frais supplémentaires)",
         value: true,
         icon: "description"
     }
 ]
 const customSpecs = [
     {
-        text: "Page d'ccueil",
+        text: "Page d'accueil",
         value: true,
         icon: "description"
     },
@@ -168,7 +168,7 @@ const customSpecs = [
         icon: "description"
     },
     {
-        text: "Une page pour chacunde vos services",
+        text: "Une page par service",
         value: true,
         icon: "description"
     },
@@ -178,7 +178,7 @@ const customSpecs = [
         icon: "description"
     },
     {
-        text: "Chartre graphique personnalisée",
+        text: "Charte graphique personnalisée",
         value: true,
         icon: "description"
     },
@@ -192,16 +192,16 @@ const customSpecs = [
         value: true
     },
     {
-        text: "Interface admin",
+        text: "Espace administrateur",
         value: true
     },
     {
-        text: "Pages supplémentaires en fonctions de vos besoins (frais en sus)",
+        text: "Possibilité d'ajouter d'autres pages (frais supplémentaires)",
         value: true,
         icon: "description"
     },
     {
-        text: "Interface admin (frais en sus)",
+        text: "quoi de plus ?",
         value: true,
         icon: "description"
     }

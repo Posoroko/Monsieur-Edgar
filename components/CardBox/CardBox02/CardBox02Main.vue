@@ -31,13 +31,13 @@ const cardsContent = {
         id: "2",
         image: null,
         title: "Accompagnement total",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Nous sommes présents depuis la conception jusqu'à la maintenance de votre site.",
     },
     hebergement: {
         id: "3",
         image: null,
         title: "Prix compétitifs",
-        text: "Nous vous conseillons pour identifier vos objectifs et vos besoins puis nous vous proposons une solution adaptée.",
+        text: "Un service artisanal, local et personnalisable à un prix attractif.",
     }
 }
 

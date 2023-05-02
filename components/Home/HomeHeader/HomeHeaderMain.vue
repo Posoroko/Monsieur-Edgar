@@ -8,7 +8,7 @@
             <div class="leftBox flex column gap50">
                 <h1 class="headerMainTitle">Service complet pour votre projet de site web.</h1>
                 <p class="headerText">
-                    Monsieur Edgar vous aide à développer votre visibilité en ligne en créant le site web qui vous ressemble. 
+                    Vous êtes un professionnel ? Monsieur Edgar vous aide à développer votre visibilité en ligne en créant le site web qui vous ressemble./ adapté à vos besoins. 
                 </p>
             </div>
 

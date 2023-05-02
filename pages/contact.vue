@@ -31,21 +31,21 @@
 
                 <div class="contactFormLine">
                     <label class="contactFormLineLabel" for="email">
-                        téléphone
+                        Téléphone
                     </label>
                     <input class="contactFormLineInput" type="email" name="email" id="email">
                 </div>
 
                 <div class="contactFormLine">
                     <label class="contactFormLineLabel" for="message">
-                        Quel est votre projet?
+                        Quel est votre projet ?
                     </label>
                     <textarea class="contactFormLineInput" name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
 
                 <div class="contactFormLine flex column gap10">
                     <p class="contactFormLineLabel">
-                        Comment préférez-vous échanger?
+                        Comment préférez-vous échanger ?
                     </p>
 
                     <div class="contactChoiceBox flex justifyEvenly">
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="contactFormLine flex column alignCenter relative">
-                    <p>J'accepte que mes données soient sauvegardées et utilisées pour me recontacter</p>
+                    <p>J'accepte que mes données soient sauvegardées et utilisées pour me recontacter.</p>
                     <label class="contactFormLineLabel" for="checkbox">
                         <span class="icon formCheckbox" v-if="formCheckbox" @click="formCheckbox = !formCheckbox">check_box</span>
                         <span class="icon formCheckbox" v-if="!formCheckbox" @click="formCheckbox = !formCheckbox">check_box_outline_blank</span>
