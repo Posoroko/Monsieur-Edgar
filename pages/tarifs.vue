@@ -21,8 +21,8 @@ import { TarifsBoardMain } from '~/.nuxt/components';
                 <li class="marTop50">
                     <h3 class="bodyH3">Sites standards</h3>
                     <p class="marTop5 bodyText">
-                        L’offre standard comporte : une page d’accueil, la vitrine en ligne de votre entreprise, une page à propos présentant votre activité, une page détaillant chacun de vos services, ainsi qu’une page contact avec un formulaire de demande d’informations. 
-    Vous choisissez un modèle de site standard parmi notre offre et nous y intégrons vos textes et vos photos. 
+                        L’offre standard comporte : une page d’accueil, une page à propos présentant votre activité, une page détaillant chacun de vos services, ainsi qu’une page contact avec un formulaire de demande d’informations. 
+    Vous choisissez un modèle de site standard parmi notre offre et nous y injectons l'image de votre entreprise en y intégrant vos textes et vos photos. 
 
                     </p>
                 </li>
@@ -30,8 +30,9 @@ import { TarifsBoardMain } from '~/.nuxt/components';
                 <li class="marTop50">
                     <h3 class="bodyH3">Sites premiums</h3>
                     <p class="marTop5 bodyText">
-                        En plus de toutes les pages comprises dans l’offre standard, les sites premium incluent en plus une galerie de photos ou un portfolio présentant vos réalisations. Vous avez également la possibilité d’ajouter toute autre page de votre choix (frais supplémentaires). Vous bénéficiez en outre de votre propre espace administrateur, facile à prendre en main, vous permettant d’alimenter votre site et d’en gérer le contenu.
-    Vous choisissez un modèle de site premium parmi notre offre et nous y intégrons vos textes et vos photos.
+                        En plus des pages de l’offre standard, les sites premium incluent une page supplémentaire pour rendre votre site plus vivant. Vous avez le choix parmi les pages suivantes : page actualité, agenda, blog, galerie photos ou portfolio. Grâce à votre espace administrateur facile à prendre en main, vous pouvez alimenter en contenu votre site et partager votre activité avec vos visiteurs.
+    Vous choisissez un modèle de site premium parmi notre offre et nous y injectons l'image de votre entreprise en y intégrant vos textes et vos photos.
+    Vous avez également la possibilité d’ajouter toute autre page nécessaire à vos besoins (frais supplémentaires).
  
                     </p>
                 
@@ -40,7 +41,7 @@ import { TarifsBoardMain } from '~/.nuxt/components';
                 <li class="marTop50">
                     <h3 class="bodyH3">Sites personnalisés</h3>
                     <p class="marTop5 bodyText">
-                        Vos besoins sont précis ? Nous créons pour vous un site 100% unique réalisé à partir de l’offre standard ou premium, avec en plus un logo et une charte graphique personnalisés dans un design sur mesure inspiré de l’image de votre entreprise. Nous prenons le temps de créer avec vous une image de marque répondant à vos besoins, mais vous pouvez aussi faire appel à l’un de nos collaborateurs si vous êtes dans l’urgence. 
+                        Vos besoins demandent une solution plus précise ? Nous créons pour vous un site 100% unique réalisé à partir de l’offre standard ou premium, avec en plus un logo et une charte graphique personnalisés dans un design sur mesure basé sur l’image de votre entreprise. 
                     </p>
                 </li>
             </ul>

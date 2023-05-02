@@ -1,6 +1,6 @@
 <template>
-    <div class="full">
-        <h2 class="serviceTitle">
+    <div class="full flex column gap20 justifyEnd">
+        <h2 class="bodyH2 serviceTitle raleway">
             {{ title }}
         </h2>
 
@@ -18,3 +18,12 @@ const props = defineProps({
 })
 
 </script>
+
+<style scoped>
+
+.serviceText {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+</style>

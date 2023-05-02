@@ -1,5 +1,5 @@
 <template>
-    <svg version="1.1" class="h100 iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" class="iconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
     <g>
     	<g>
@@ -77,4 +77,8 @@
     .st1{fill:#27251E;}
     .st2{fill:#F6A75F;}
     .st3{fill:#008995;}
+
+    .iconSVG{
+        height: 100%;
+    }
 </style>

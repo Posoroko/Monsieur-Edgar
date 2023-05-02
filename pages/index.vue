@@ -27,11 +27,12 @@
     <section class="mainWidth flex column gap50">
         <div class="bodyTitleAndParagraph">
             <p class="bodyH2">
-                Vous simplifier la vie avec des solutions adaptées.
+                Vous simplifier la vie en vous accompagnant jusqu'au bout.
             </p>
 
             <p class="bodyText shortWidth">
-                Nous prenons en compte toutes vos envies afin de vous offrir un service sur mesure, vous conseiller en fonction de vos besoins, et restons à vos côtés tout le long de la réalisation de votre projet web. 
+                Nos solution sont dévelopées dans le but de vous offrir un service sur mesure. Nous vous conseillons en fonction de vos besoins, 
+                et restons à vos côtés tout le long de la réalisation de votre projet web. 
             </p>
         </div>
 

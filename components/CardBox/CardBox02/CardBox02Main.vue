@@ -2,15 +2,15 @@
     <CardBoxMain>
 
         <div class="flex justifyCenter gap20 wrap">
-            <CardBoxCard :title="cardsContent.design.title" :text="cardsContent.design.text">
+            <CardBoxCard :title="cardsContent.service.title" :text="cardsContent.service.text">
                 <IconDesign />
             </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.developpement.title" :text="cardsContent.design.text">
+            <CardBoxCard :title="cardsContent.accompagnement.title" :text="cardsContent.accompagnement.text">
                 <IconDeveloppement />
             </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.hebergement.title" :text="cardsContent.hebergement.text">
+            <CardBoxCard :title="cardsContent.prix.title" :text="cardsContent.prix.text">
                 <IconHebergement />
             </CardBoxCard>
         </div>
@@ -21,23 +21,23 @@
 <script setup>
 
 const cardsContent = {
-    design: {
+    service: {
         id: "1",
         image: null,
         title: "Service humain",
         text: "Une entreprise locale, passionnée par le fait-main, partenaire des travailleurs indépendants.",
     },
-    developpement: {
+    accompagnement: {
         id: "2",
         image: null,
         title: "Accompagnement total",
-        text: "Nous sommes sd présents depuis la conception jusqu'à la maintenance de votre site.",
+        text: "Nous sommes présents depuis la conception jusqu'à la maintenance de votre site.",
     },
-    hebergement: {
+    prix: {
         id: "3",
         image: null,
         title: "Prix compétitifs",
-        text: "Un service artisanal, local et personnalisable à un prix attractif.",
+        text: "Un service clé en main artisanal, local et personnalisé à un prix attractif.",
     }
 }
 

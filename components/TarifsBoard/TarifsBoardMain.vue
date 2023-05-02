@@ -41,13 +41,13 @@ const standardContent = {
 const premiumContent = {
     title: "Site premium",
     price: 1150,
-    topCardText: "Les pages de vtre choix pour la promotion de votre activité, ainsi qu'un espace administrateur facile d'utilisation.  "
+    topCardText: "Toute l'offre standard plus une page à contenu dynamique de votre choix, et l'accès à un espace administrateur facile d'utilisation.  "
 }
 
 const customContent = {
     title: "Site personnalisé",
     price: 1750,
-    topCardText: "Vous avez des besoins spécifiques ? Toutes les pages de votre choix, un espace administrateur ainsi qu'une charte graphique à l'image de votre entreprise."
+    topCardText: "L'offre standard (extesible au besoin), un design sur mesure, et des fonctionnalités adaptées à votre activité."
 }
 
 const standardSpecs = [
@@ -142,7 +142,7 @@ const premiumSpecs = [
         value: true
     },
     {
-        text: "Page galerie photo ou portfolio",
+        text: "Page dynamique au choix",
         value: true,
         icon: "description"
     },
@@ -192,16 +192,7 @@ const customSpecs = [
         value: true
     },
     {
-        text: "Espace administrateur",
-        value: true
-    },
-    {
         text: "Possibilité d'ajouter d'autres pages (frais supplémentaires)",
-        value: true,
-        icon: "description"
-    },
-    {
-        text: "quoi de plus ?",
         value: true,
         icon: "description"
     }

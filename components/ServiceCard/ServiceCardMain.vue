@@ -1,6 +1,6 @@
 <template>
     <div class="serviceCard w100 flex gap20">
-        <div class="imageFrame h100">
+        <div class="imageFrame">
             <slot name="icon" />
         </div>
 
@@ -19,20 +19,45 @@ const props = defineProps({
 
 <style scoped>
 .serviceCard {
-    
     background-color: var(--bg-secondary);
     padding: 30px;
     border-radius: 10px;
+    outline: 2px solid transparent;
     box-shadow: 0px 0px 10px black;
+    transition: 300ms ease;
 }
+
+@media (max-width: 849px) {
+    .serviceCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imageFrame {
+        height: 150px;
+        background-color: #fff;
+    }
+}
+@media (min-width: 850px) {
+    .serviceCard {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .imageFrame {
+        height: 250px;
+    }
+}
+
+
+
+.serviceCard:hover {
+    outline: 2px solid var(--border-color-1);
+    transition: 300ms ease;
+}
+
+
 .imageFrame{
-    height: 300px;
-    aspect-ratio: 1/1;
     background-color: #ffffff2d;
     border-radius: 10px;
 }
-.contentBox {
-    height: 300px;
-    flex-grow: 1;
-}
+
 </style>

@@ -30,6 +30,7 @@ a {
 }
 .smallWidth {
     width: min(calc(1400px * 0.6), 98vw);
+    margin: auto;
 }
 .shortWidth {
     width: min(1000px, 100%);
