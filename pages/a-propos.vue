@@ -12,7 +12,7 @@
         
         <div>
             <p class="bodyText">
-                Monsieur Edgar est un service proposé par Studio Posoroko, une agence web installée à Carhaix-Plouguer, dans le Finistère.  Son objectif est de développer des sites web 
+                <b>Monsieur Edgar</b> est un service proposé par <b>Studio Posoroko</b>, une agence web installée à Carhaix-Plouguer, dans le Finistère.  Son objectif est de développer des sites web 
                 pour les travailleurs indépendants et les petites entreprises, à des prix compétitifs.
                 <br>
                 <br>
@@ -21,11 +21,11 @@
             </p>
         </div>
 
-        <h2 class="bodyH2">Qui est Monsieur Edgar?</h2>
+        <h2 class="bodyH2 marTop50">Studio Posoroko et Eric Podhorecki</h2>
         <p class="bodyText">
             Eric Podhorecki a quitté son Québec natal pour s'installer en Centre-Bretagne il y a plus de vingt ans.  Après avoir travaillé comme accessoiriste de cinéma, 
             chef de cuisine et proffesseur de collège,  il s'est reconverti en développeur web afin de vivre de sa passion pour l'informatique, les nouvelles technologies et le design.  
-            Il a créé Studio Posoroko sous le statut d'auto-entrepreneur.
+            Il a créé <b>Studio Posoroko</b> sous le statut d'auto-entrepreneur.
         </p>
     </main>
 </template>
