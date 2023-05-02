@@ -10,7 +10,7 @@
         </div>
     </header>
 
-    <main class="serviceCardBox shortWidth flex column gap20 marTop150">
+    <main class="serviceCardBox shortWidth flex column gap40">
         <ServiceCardMain :title="services.design.title" :text="services.design.text">
             <template #icon>
                 <IconDesign />
@@ -68,6 +68,10 @@ const services = {
 </script>
 
 <style scoped>
+.serviceCardBox {
+    margin: auto;
+    margin-top: 100px;
+}
 .serviceTitle {
     font-size: 24px;
     font-weight: 600;

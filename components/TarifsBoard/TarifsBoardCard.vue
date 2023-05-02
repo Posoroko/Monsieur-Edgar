@@ -34,10 +34,14 @@
                         <span class="specLineContentText flex alignCenter gap10">
                             <span class="specLineText raleway">{{ spec.text }}</span>
                         </span>
+                        <a href="#detailBox"></a>
                         <span class="specLineIcon iconOutlined specCheck centered">check_circle</span>
                     </span>
                 </li>
             </ul>
+        </div>
+        <div class="detailBox centered">
+            <p class="button1 textAlignCenter">en savoir plus ...</p>
         </div>
     </div>
 </template>
