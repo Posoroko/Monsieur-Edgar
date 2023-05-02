@@ -1,6 +1,18 @@
 :root {
     --dark-blue: #01101c;
     --mainWidth: 1400px;
+    --mainWidth-padding-1: 20px; 
+}
+
+@media (max-width: 999px) {
+    :root {
+        --mainWidth-padding-1: 15px;
+    }
+}
+@media (min-width: 1000px) {
+    :root {
+        --mainWidth-padding-1: 30px;
+    }
 }
 
 body {
@@ -12,7 +24,8 @@ a {
 }
 .mainWidth {
     width: min(1400px, 100%);
-    padding: 0 30px;
+    padding-left: var(--mainWidth-padding-1);
+    padding-right: var(--mainWidth-padding-1);
     margin: auto;
 }
 .smallWidth {
