@@ -31,7 +31,7 @@ const cardsContent = {
         id: "2",
         image: null,
         title: "Accompagnement total",
-        text: "Nous sommes présents depuis la conception jusqu'à la maintenance de votre site.",
+        text: "Nous sommes sd présents depuis la conception jusqu'à la maintenance de votre site.",
     },
     hebergement: {
         id: "3",
