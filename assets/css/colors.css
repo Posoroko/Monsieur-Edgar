@@ -3,12 +3,11 @@
     --secondary-color:#070e13;
 
 
-    --bg-main: rgb(7, 13, 19);
-    --bg-secondary: rgb(11, 24, 24);
-    --bg-third: rgb(10, 20, 20);
+    --bg-main: rgb(5, 14, 9);
+    --bg-secondary: rgb(16, 32, 28);
+    --card-bg: #23312a;
+    --card-bg-hover: #0f1411;
 
-    /* --bg-main: #070e13;
-    --bg-secondary: #142726; */
 
     --funky-main: #d8b92d;
 
@@ -24,4 +23,15 @@
 
 .textMainColor.hover:hover {
     color: var(--text-secondary-color);
+}
+
+.cardColor {
+    background-color: var(--card-bg);
+    outline: 2px solid transparent;
+    transition: 300ms ease;
+}
+.card:hover {
+    background-color: var(--card-bg-hover);
+    outline: 2px solid var(--border-color-1);
+    transition: 600ms ease;
 }

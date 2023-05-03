@@ -15,7 +15,7 @@
 }
 
 body {
-    background: radial-gradient(circle, var(--bg-third) 0%, var(--bg-main) 100%);
+    background: radial-gradient(circle, var(--bg-secondary) 0%, var(--bg-main) 100%);
     /* background: radial-gradient(circle, rgb(10, 20, 20) 0%, rgba(7, 14, 19, 1) 100%); */
     position: relative;
 }
@@ -49,5 +49,5 @@ main {
     min-height: 100vh;
 }
 .triangles {
-    opacity: 0.05;
+    opacity: 0.07;
 }

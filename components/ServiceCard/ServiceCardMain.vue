@@ -23,7 +23,7 @@ const props = defineProps({
     padding: 30px;
     border-radius: 10px;
     outline: 2px solid transparent;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 1px 2px 10px black;
     transition: 300ms ease;
 }
 

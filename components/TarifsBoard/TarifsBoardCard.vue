@@ -76,7 +76,7 @@ console.log(props.specs)
 }
 .tarifCardBox {
     width: min(90vw, 350px);
-    background-color: var(--bg-secondary);
+    background-color: var(--card-bg);
     padding: 10px;
     border-radius: 10px;
 }

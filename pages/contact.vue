@@ -76,7 +76,7 @@
                 
 
                 <div class="contactFormLine centered">
-                    <button class="submitButton" @click.prevent>
+                    <button class="submitButton" @click.prevent="handleSubmit">
                         Envoyer
                     </button>
                 </div>
@@ -112,13 +112,14 @@
 
 <script setup>
 const formCheckbox = ref(false)
-
 const contactForm = ref(null)
-
 const contactChoice = ref(null)
 
 const handleContactChoice = (choice) => {
     contactChoice.value = choice
+}
+const handleSubmit = () => {
+    console.log(contactForm.value)
 }
 
 </script>
@@ -147,6 +148,7 @@ const handleContactChoice = (choice) => {
 }
 .contactFormLineInput {
     font-size: 18px;
+    font-weight: 700;
     color: black;
     padding: 10px 15px;
     border: 1px solid #000;
@@ -164,7 +166,7 @@ textarea.contactFormLineInput {
     opacity: 0;
 }
 .contactCard{
-    background-color: var(--bg-secondary);
+    background-color: var(--card-bg);
     padding: 25px;
     border-radius: 30px;
     display: flex;
