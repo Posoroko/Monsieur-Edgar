@@ -1,10 +1,10 @@
 <template>
-    <div class="relative overflowHidden noEvents">
-        <div class="trianglesBox absoluteFull noEvents">
-            <img src="/images/triangles.svg" class="triangle objectFitCover noEvents" alt="">
+    <div class="relative overflowHidden noEvents z_0000">
+        <div class="trianglesBox absoluteFull noEvents ">
+            <img src="/images/triangles.svg" class="triangles objectFitCover noEvents" alt="">
         </div>
 
-        <header class="header homeHeader relative mainWidth flex wrap">
+        <header class="header homeHeader relative mainWidth flex wrap z_0000">
             <div class="leftBox flex column gap50">
                 <h1 class="headerMainTitle">Service complet pour votre projet de site web.</h1>
                 <p class="headerText">
@@ -21,7 +21,7 @@
 
 <style scoped>
 
-.triangle{
+.triangles{
     opacity: 0.05;
 }
 

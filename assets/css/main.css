@@ -1,5 +1,4 @@
 :root {
-    --dark-blue: #01101c;
     --mainWidth: 1400px;
     --mainWidth-padding-1: 20px; 
 }
@@ -16,7 +15,11 @@
 }
 
 body {
-    background: radial-gradient(circle, rgb(10, 20, 20) 0%, rgba(7, 14, 19, 1) 100%);
+    background: radial-gradient(circle, var(--bg-third) 0%, var(--bg-main) 100%);
+    /* background: radial-gradient(circle, rgb(10, 20, 20) 0%, rgba(7, 14, 19, 1) 100%); */
+    position: relative;
+}
+#__nuxt {
     position: relative;
 }
 
@@ -45,8 +48,6 @@ a {
 main {
     min-height: 100vh;
 }
-
 .triangles {
-    opacity: 0.1;
-    pointer-events: none;
+    opacity: 0.05;
 }

@@ -130,7 +130,7 @@
     pointer-events: all;
 }
 
-.z0000  { z-index: 0; }
+.z_0000  { z-index: 0; }
 .z_1000 { z-index: 1000; }
 .z_2000 { z-index: 2000; }
 .z_3000 { z-index: 3000; }

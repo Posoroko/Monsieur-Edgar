@@ -1,6 +1,3 @@
-
-import { TarifsBoardMain } from '~/.nuxt/components';
-
 <template>
     <header class="header relative tarifHeader flex justifyCenter">
         <div class="tarifsHeaderContent flex column gap20 z_1000">

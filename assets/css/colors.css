@@ -3,8 +3,12 @@
     --secondary-color:#070e13;
 
 
-    --bg-main: #070e13;
-    --bg-secondary: #142726;
+    --bg-main: rgb(7, 13, 19);
+    --bg-secondary: rgb(11, 24, 24);
+    --bg-third: rgb(10, 20, 20);
+
+    /* --bg-main: #070e13;
+    --bg-secondary: #142726; */
 
     --funky-main: #d8b92d;
 
