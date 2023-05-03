@@ -12,7 +12,7 @@
                 </p>
             </div>
 
-            <div class="sceneBox absolute top0 right0 centered h100">
+            <div class="sceneBox absolute top0 right0 h100 centered">
                 <img src="/images/home-scene.png" class="homeScene" alt="">
             </div>
         </header>
@@ -28,16 +28,17 @@
     width: min(100%, 700px);
 }
 .homeScene {
-    width: 700px;
+    width: min(700px, 40vw);
 }
-@media (max-width: 600px) {
+@media (max-width: 1099px) {
     .homeScene {
         display: none;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
     .homeScene {
         display: flex;
     }
 }
+
 </style>
