@@ -21,9 +21,7 @@
 
 <style scoped>
 
-.triangles{
-    opacity: 0.05;
-}
+
 
 .homeHeader .leftBox {
     width: min(100%, 700px);

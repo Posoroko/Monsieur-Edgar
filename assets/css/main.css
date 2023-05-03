@@ -33,7 +33,7 @@ a {
     margin: auto;
 }
 .smallWidth {
-    width: min(calc(1400px * 0.6), 98vw);
+    width: min(calc(1400px * 0.6), 100%);
     margin: auto;
 }
 .shortWidth {

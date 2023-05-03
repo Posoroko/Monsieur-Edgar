@@ -26,7 +26,7 @@
 
 .headerMainTitle {
     font-family: 'Raleway', sans-serif;
-    font-size: clamp(50px, 15vw, 72px);
+    font-size: clamp(50px, 14vw, 72px);
     line-height: clamp(50px, 15vw, 72px);
 }
 .headerText {
