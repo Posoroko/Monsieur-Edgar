@@ -119,6 +119,10 @@
 .fS22 { font-size: 22px; }
 .fS24 { font-size: 24px; }
 
+.noEvents {
+    pointer-events: none;
+}
+
 .noEvents_kidsEvents  {
     pointer-events: none;
 }

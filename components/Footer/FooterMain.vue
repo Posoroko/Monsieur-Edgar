@@ -1,7 +1,7 @@
 <template>
     <footer class="footer flex justifyBetween alignCenter">
         <div class="">
-            <p>© Studio Posoroko 2023</p>
+            <p class="footerText">© Studio Posoroko 2023</p>
         </div>
 
         <div class="h100 flex alignCenter gap20">
@@ -19,5 +19,7 @@
     height: 80px;
     border-top: 1px solid var(--border-color-1);
     margin-top: 100px;
+    padding: 0 10px;
 }
+
 </style>

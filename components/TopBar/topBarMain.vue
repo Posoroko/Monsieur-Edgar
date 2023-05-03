@@ -1,6 +1,6 @@
 
 <template>
-    <div class="topBarBox flex justifyBetween wrap">
+    <div class="topBarBox flex justifyBetween wrap z5000">
         <NuxtLink to="/" class="flexA h100">
             <WidgetsLogo />
         </NuxtLink>

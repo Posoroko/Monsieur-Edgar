@@ -1,14 +1,14 @@
 <template>
     <div class="button2 relative centered" :class="{ 'active': route.path == tab.link }" v-for="tab in tabs"
         :key="tab.name">
-        <NuxtLink class="text" :to="tab.link">
+        <NuxtLink class="text footerText" :to="tab.link">
             {{ tab.name }}
         </NuxtLink>
     </div>
 
     <div class="button2 relative centered">
-        <a class="text" href="https://posoroko.com">
-            www.posoroko.com
+        <a class="text footerText" href="https://posoroko.com">
+            posoroko.com
         </a>
     </div>
 </template>

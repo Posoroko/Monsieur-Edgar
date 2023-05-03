@@ -17,6 +17,7 @@
 
 body {
     background: radial-gradient(circle, rgb(10, 20, 20) 0%, rgba(7, 14, 19, 1) 100%);
+    position: relative;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
 
 .header {
     padding: 15vh 20px;
+    pointer-events: none;
 }
 
 main {
@@ -46,4 +48,5 @@ main {
 
 .triangles {
     opacity: 0.1;
+    pointer-events: none;
 }

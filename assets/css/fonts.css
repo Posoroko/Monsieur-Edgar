@@ -70,3 +70,6 @@
     color: rgb(204, 204, 204);
     font-weight: 400;
 }
+.footerText {
+    font-size: clamp(10px, 3vw, 16px);
+}

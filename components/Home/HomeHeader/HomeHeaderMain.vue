@@ -1,7 +1,7 @@
 <template>
-    <div class="relative overflowHidden">
-        <div class="absoluteFull">
-            <img src="/images/triangles.svg" class="triangle objectFitCover" alt="">
+    <div class="relative overflowHidden noEvents">
+        <div class="trianglesBox absoluteFull noEvents">
+            <img src="/images/triangles.svg" class="triangle objectFitCover noEvents" alt="">
         </div>
 
         <header class="header homeHeader relative mainWidth flex wrap">
@@ -20,6 +20,7 @@
 </template>
 
 <style scoped>
+
 .triangle{
     opacity: 0.05;
 }
