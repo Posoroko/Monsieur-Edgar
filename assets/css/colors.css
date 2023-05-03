@@ -15,6 +15,10 @@
     --text-secondary-color: #d3d3d3;
 
     --border-color-1: rgba(255, 255, 255, 0.247);
+
+    --standard-color: green;
+    --premium-color: rgb(187, 142, 58);
+    --custom-color: rgb(123, 80, 175);
 }
 
 .textMainColor {

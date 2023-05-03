@@ -1,12 +1,12 @@
 <template>
     <div class="tarifCardBox flex column gap10">
         <div class="topBox flex column alignCenter gap10">
-            <h2 class="tarifTitle flex justifyCenter alignCenter">
-                {{ title }}
+            <h2 class="tarifTitle flex justifyCenter alignCenter relative" :class="`tarifTitle${title}`">
+                {{ `Site ${title}` }}
             </h2>
 
             <p class="servicePriceLine">
-                <span class="text">à partir de</span> &nbsp <span class="price">{{ price }}€</span>
+                <span class="text" v-if="from">à partir de</span> &nbsp <span class="price">{{ price }}€</span>
             </p>
 
             <p class="topBoxText bodyText">
@@ -21,7 +21,9 @@
                         <span class="specLineContentText flex alignCenter gap10">
                             <span class="specLineText raleway">{{ spec.text }}</span>
                         </span>
-                        <span class="specLineIcon iconOutlined specCheck centered">check_circle</span>
+                        <span class="specLineIcon iconOutlined specCheck custom centered" v-if="spec.plan == 'custom'">verified</span>
+                        <span class="specLineIcon iconOutlined specCheck premium centered" v-else-if="spec.plan == 'premium'">verified</span>
+                        <span class="specLineIcon iconOutlined specCheck standard centered" v-else>check_circle</span>
                     </span>
                 </li>
             </ul>
@@ -34,8 +36,6 @@
                         <span class="specLineContentText flex alignCenter gap10">
                             <span class="specLineText raleway">{{ spec.text }}</span>
                         </span>
-                        
-                        <span>check_circle</span>
                     </span>
                 </li>
             </ul>
@@ -50,6 +50,7 @@
 
 const props = defineProps({
     title: String,
+    from: Boolean,
     price: Number,
     topCardText: String,
     specs: Array,
@@ -92,7 +93,15 @@ console.log(props.specs)
     font-weight: 700;
     color: var(--text-color-1);
     padding: 10px 0;
-    border-bottom: 1px solid var(--border-color-1);
+}
+.tarifTitlestandard {
+        border-bottom: 1px solid green;
+}
+.tarifTitlepremium {
+    border-bottom: 1px solid var(--premium-color);
+}
+.tarifTitlepersonnalisé {
+    border-bottom: 1px solid var(--custom-color);
 }
 .topBoxText {
     font-size: 14px;
@@ -131,5 +140,13 @@ console.log(props.specs)
     font-size: 30px;
     color: green;
 }
-
+.standard {
+    color: green;
+}
+.premium {
+    color: var(--premium-color);
+}
+.custom {
+    color: var(--custom-color);
+}
 </style>

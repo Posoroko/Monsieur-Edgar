@@ -12,9 +12,7 @@
     <main class="main contactMain mainWidth flex column gap50">
         <section class="contactMainBox flex justifyCenter">
             
-            <form ref="contactForm" class="contactForm flex column gap20">
-                
-
+            <form ref="contactForm" class="contactForm flex column gap20 relative">
                 <div class="contactFormLine">
                     <label class="contactFormLineLabel" for="name">
                         Nom
@@ -30,10 +28,10 @@
                 </div>
 
                 <div class="contactFormLine">
-                    <label class="contactFormLineLabel" for="email">
+                    <label class="contactFormLineLabel" for="phone">
                         Téléphone
                     </label>
-                    <input class="contactFormLineInput" type="email" name="email" id="email">
+                    <input class="contactFormLineInput" type="text" name="phone" id="phone">
                 </div>
 
                 <div class="contactFormLine">
@@ -48,16 +46,16 @@
                         Comment préférez-vous échanger ?
                     </p>
 
-                    <div class="contactChoiceBox flex justifyEvenly">
-                        <div class="selectorButton" :class="{ 'active': contactChoice == 'telephone' }" @click.prevent="handleContactChoice('telephone')">
+                    <div class="contactPreferenceBox flex justifyEvenly">
+                        <div class="selectorButton" :class="{ 'active': contactPreference == 'telephone' }" @click.prevent="handlecontactPreference('telephone')">
                             téléphone
                         </div>
                 
-                        <div class="selectorButton" :class="{ 'active': contactChoice == 'sms' }" @click.prevent="handleContactChoice('sms')">
+                        <div class="selectorButton" :class="{ 'active': contactPreference == 'sms' }" @click.prevent="handlecontactPreference('sms')">
                             sms
                         </div>
 
-                        <div class="selectorButton" :class="{ 'active': contactChoice == 'email' }" @click.prevent="handleContactChoice('email')">
+                        <div class="selectorButton" :class="{ 'active': contactPreference == 'email' }" @click.prevent="handlecontactPreference('email')">
                             email
                         </div>
 
@@ -73,13 +71,16 @@
                     <input class="hiddenFormCheckbox" id="checkbox" type="checkbox">
                 </div>
 
-                
+                <p class="responseText" v-if="message"> {{ message }} </p>
+
+                <p class="responseText" v-if="error"> {{ error }} </p>
 
                 <div class="contactFormLine centered">
                     <button class="submitButton" @click.prevent="handleSubmit">
                         Envoyer
                     </button>
                 </div>
+                
                 
             </form>
             
@@ -113,13 +114,46 @@
 <script setup>
 const formCheckbox = ref(false)
 const contactForm = ref(null)
-const contactChoice = ref(null)
+const contactPreference = ref(null)
+const apiUrl = "https://admin.monsieuredgar.com/Items/Site_mail"
+const isPending = ref(false)
+const error = ref(null)
+const message = ref(null)
 
-const handleContactChoice = (choice) => {
-    contactChoice.value = choice
+
+
+const handlecontactPreference = (choice) => {
+    contactPreference.value = choice
 }
-const handleSubmit = () => {
-    console.log(contactForm.value)
+const handleSubmit = async () => {
+    isPending.value = true
+    error.value = false
+    const formData = {
+        name: contactForm.value.name.value,
+        email: contactForm.value.email.value,
+        phone: contactForm.value.phone.value,
+        message: contactForm.value.message.value,
+        contactPreference: contactPreference.value,
+        termsAccepted: formCheckbox.value
+    }
+
+    const response = await postDataToApi(formData)
+    if(!response.data) {
+        error.value = "Désolé pour l'inconvénient, un problème est survenu. Veuillez réessayer plus tard ou nous contacter par un autre moyen."
+    }
+    isPending.value = false
+    message.value = "Nous avons bien reçu votre message, nous vous recontacterons dans les plus brefs délais."
+}
+
+const postDataToApi = async (data) => {
+    const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+    })
+    return response.json()
 }
 
 </script>
@@ -178,11 +212,19 @@ textarea.contactFormLineInput {
     border: 1px solid var(--bg-secondary);
     margin: auto;
 }
-.contactChoiceBox *{
+.contactPreferenceBox *{
     cursor: pointer;
 }
 
-.contactChoiceBox div input {
+.contactPreferenceBox div input {
     opacity: 0;
+}
+.responseText {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--funky-main);
+    border-radius: 10px;
 }
 </style>

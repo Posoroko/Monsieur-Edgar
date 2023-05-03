@@ -3,18 +3,21 @@
         <h1 class="bodyH2 centered marTop20">développement</h1>
         <div class="tarifsBoard marTop20 flex justifyCenter gap20 wrap">
             <TarifsBoardCard 
-                :title="standardContent.title" 
+                :title="standardContent.title"
+                :from="standardContent.from"
                 :price="standardContent.price" 
                 :specs="standardSpecs" 
                 :topCardText="standardContent.topCardText" />
             <TarifsBoardCard 
                 :title="premiumContent.title" 
+                :from="premiumContent.from"
                 :price="premiumContent.price" 
                 :specs="premiumSpecs" 
                 :topCardText="premiumContent.topCardText" />
 
             <TarifsBoardCard 
                 :title="customContent.title" 
+                :from="customContent.from"
                 :price="customContent.price" 
                 :specs="customSpecs" 
                 :topCardText="customContent.topCardText" />
@@ -34,18 +37,21 @@
 <script setup>
 
 const standardContent = {
-    title: "Site standard",
+    title: "standard",
+    from: false,
     price: 750,
     topCardText: "Toutes les pages nécessaires à la présentation de votre activité et de vos services dans une interface claire et ergonomique."
     }
 const premiumContent = {
-    title: "Site premium",
+    title: "premium",
+    from: true,
     price: 1150,
     topCardText: "Toute l'offre standard plus une page à contenu dynamique de votre choix, et l'accès à un espace administrateur facile d'utilisation.  "
 }
 
 const customContent = {
-    title: "Site personnalisé",
+    title: "personnalisé",
+    from: true,
     price: 1750,
     topCardText: "L'offre standard (extesible au besoin), un design sur mesure, et des fonctionnalités adaptées à votre activité."
 }
@@ -139,21 +145,25 @@ const premiumSpecs = [
     },
     {
         text: "Modèle premium au choix",
-        value: true
+        value: true,
+        plan: "premium"
     },
     {
         text: "Page dynamique au choix",
         value: true,
-        icon: "description"
+        icon: "description",
+        plan: "premium"
     },
     {
         text: "Espace administrateur",
-        value: true
+        value: true,
+        plan: "premium"
     },
     {
         text: "Possibilité d'ajouter d'autres pages (frais supplémentaires)",
         value: true,
-        icon: "description"
+        icon: "description",
+        plan: "premium"
     }
 ]
 const customSpecs = [
@@ -180,21 +190,25 @@ const customSpecs = [
     {
         text: "Charte graphique personnalisée",
         value: true,
-        icon: "description"
+        icon: "description",
+        plan: "custom"
     },
     {
         text: "Logo personnalisé",
         value: true,
-        icon: "description"
+        icon: "description",
+        plan: "custom"
     },
     {
         text: "Design personnalisé",
-        value: true
+        value: true,
+        plan: "custom"
     },
     {
         text: "Possibilité d'ajouter d'autres pages (frais supplémentaires)",
         value: true,
-        icon: "description"
+        icon: "description",
+        plan: "custom"
     }
 ]
 </script>

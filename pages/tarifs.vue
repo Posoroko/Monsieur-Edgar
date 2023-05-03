@@ -1,7 +1,7 @@
 <template>
     <header class="header relative tarifHeader flex justifyCenter">
         <div class="tarifsHeaderContent flex column gap20 z_1000">
-            <h2 class="textAlignCenter bodyH2">Nos tarifs</h2>
+            <h2 class="textAlignCenter headerMainTitle">Nos tarifs</h2>
             <p class="bodyText">
                 Pour vos petits ou grands projets, nous proposons des devis adaptés à vos besoins et à votre budget.
             </p>
@@ -15,7 +15,7 @@
     <main class="tarifMain mainWidth flex column alignCenter">
         <TarifsBoardMain />
 
-        <section id="detailBox"  class="mainWidth flex justifyCenter marTop50">
+        <section id="detailBox"  class="mainWidth flex justifyCenter marTop100">
             <ul class="smallWidth flex column gap20">
                 <li class="marTop50">
                     <h3 class="bodyH3">Sites standards</h3>
