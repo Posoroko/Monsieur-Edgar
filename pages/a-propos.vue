@@ -12,12 +12,12 @@
         
         <div>
             <p class="bodyText pad10">
-                <b>Monsieur Edgar</b> est un service proposé par <b>Studio Posoroko</b>, une agence web installée à Carhaix-Plouguer, dans le Finistère.  Son objectif est de développer des sites web 
-                pour les travailleurs indépendants et les petites entreprises, à des prix compétitifs.
+                <b>Monsieur Edgar</b> est un service proposé par <b>Studio Posoroko</b>, une agence web installée à Carhaix-Plouguer, dans le Finistère.  
+                Son objectif est de développer des sites web pour les travailleurs indépendants et les petites entreprises, à des prix compétitifs.
                 <br>
                 <br>
-                Alors que les agences web traditionnelles proposent des site créés avec des CMS comme
-                Wordpress ou Wix, nous codons nos sites à la mains en fonction des besoins de nos clients.  Cela nous permet de proposer des sites légers, performants et faciles à entretenir.
+                Alors que les agences web traditionnelles proposent des sites créés avec des CMS comme
+                Wordpress ou Wix, nous codons nos sites à la main en fonction des besoins de nos clients.  Cela nous permet de proposer des sites légers, performants et faciles à entretenir.
             </p>
         </div>
 

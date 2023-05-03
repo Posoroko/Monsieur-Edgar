@@ -48,7 +48,7 @@ const services = {
     developpement: {
         id: 2,
         title: "Développement",
-        text: "Développer un site web, c’est fabriquer un produit adapté à sa fonction et à la demande du client. Tous nos sites sont codés main, sans recours à des site builders tels que Wordpress. Nous réalisons ainsi des sites, léger, performants et adaptés à tous les écrans. Nous développons votre site à partir de nos propres modèles ou des designs que vous nous proposez.",
+        text: "Développer un site web, c’est fabriquer un produit adapté à sa fonction et à la demande du client. Tous nos sites sont codés main, sans recours à des site builders tels que Wordpress. Nous réalisons ainsi des sites léger, performants et adaptés à tous les écrans. Nous développons votre site à partir de nos propres modèles ou des designs que vous nous proposez.",
         icon: "<IconDesign />"
     },
     hebergement: {
@@ -60,7 +60,7 @@ const services = {
     conseil: {
         id: 4,
         title: "Conseil",
-        text: "Quels que soient vos besoins, nous sommes à votre écoute pour vous aider à faire les meilleurs choix pour votre projet. Vous n’avez pas encore de site web ? Nous vous conseillons sur le choix de vos photos et sur l’organisation des informations à distribuer sur votre site. Vous avez un site web dysfonctionnel ? Nous pouvons vous aider à trouver les solutions pour l’améliorer et à le réparer.",
+        text: "Quels que soient vos besoins, nous sommes à votre écoute pour vous aider à faire les meilleurs choix pour votre projet. Vous n’avez pas encore de site web ? Nous vous conseillons sur le choix de vos photos et sur l’organisation des informations à distribuer sur votre site. Vous avez un site web dysfonctionnel ? Nous pouvons vous aider à trouver les solutions pour l’améliorer ou le rénover.",
         icon: "<IconDesign />"
     }
 }

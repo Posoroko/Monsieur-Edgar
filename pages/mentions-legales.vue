@@ -1,7 +1,7 @@
 <template>
     <main class="mainMentions">
 
-        <div class="mainWidth marTop50">
+        <div class="mainWidth marTop150">
             <h2>Ce site internet est la propriété de <b>Studio Posoroko</b> : </h2>
 
             <address>
@@ -12,14 +12,10 @@
                 bonjour@monsieuredgar.com
             </address>
 
-            <h2>CRÉDITS </h2>
-
             <p>Les textes et illustrations font l’objet de droits réservés. </p>
             <p>illustration:</p>
             <a href="https://www.vecteezy.com/free-vector/web-development">Web Development Vectors by Vecteezy</a> <br>
             <a href="https://www.vecteezy.com/free-vector/website">Website Vectors by Vecteezy</a>
-            <p>textes:</p>
-            <p>Studio Posoroko</p>
 
             <h2>DROITS DE REPRODUCTION </h2>
             <p>
@@ -70,21 +66,7 @@
             </p>
 
 
-            <h2>ABSENCE DE GARANTIE</h2>
-            <p>
-                Nous mettons en place tous les moyens nécessaires pour vous apporter une
-                information fiable et actualisée. Cependant, malgré le soin que nous apportons à la
-                mise à jour de ce site, des erreurs ou omissions peuvent être présentes. En
-                conséquence, nous ne pourrons être tenu responsable. Nous ne garantissons pas le
-                contenu des sites Internet vers lesquels nous pointons.
-            </p>
-            <h2>LIEN </h2>
-            <p>Studio Posoroko ne réalise pas de contrôle sur ces sites, par conséquent, elle
-                n’assume aucune responsabilité quant à la disponibilité de ces sites, leurs contenus,
-                publicités, produits ou services disponibles à partir de ces sites. L’accès à d’autres
-                sites externes au site https://monsieuredgar.com se fait donc sous l’entière
-                responsabilité de l’utilisateur qui les consulte.
-            </p>
+            
         </div>
     </main>
 </template>
