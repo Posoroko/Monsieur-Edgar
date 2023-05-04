@@ -72,3 +72,17 @@
     background-color: var(--funky-main);
     transition: 300ms ease;
 }
+
+.ctaButton {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--bg-main);
+    padding:15px 25px;
+    border-radius: 10px;
+    outline: 5px double var(--funky-main);
+    cursor: pointer;
+    pointer-events: all;
+}
+.ctaButton:hover {
+    background-color: var(--bg-secondary);
+}

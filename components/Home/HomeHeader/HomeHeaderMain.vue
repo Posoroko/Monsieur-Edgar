@@ -8,8 +8,12 @@
             <div class="leftBox flex column gap50">
                 <h1 class="headerMainTitle">Service complet pour votre projet de site web.</h1>
                 <p class="headerText">
-                    Vous êtes un professionnel ? Monsieur Edgar vous aide à développer votre visibilité en ligne en créant le site web qui vous ressemble. 
+                    Vous êtes un professionnel ? Monsieur Edgar vous aide à développer votre visibilité en ligne en créant le site web 
+                    qui vous ressemble.
                 </p>
+                <div class="flex">
+                    <NuxtLink to="/contact" class="ctaButton">parlez-nous de votre projet</NuxtLink>
+                </div>
             </div>
 
             <div class="sceneBox absolute top0 right0 h100 centered">

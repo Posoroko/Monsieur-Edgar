@@ -183,9 +183,10 @@ const postDataToApi = async (data) => {
 .contactFormLineInput {
     font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: white;
+    background-color: #ffffff1a;
     padding: 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid var(--border-color-1);
     border-radius: 10px;
 }
 textarea.contactFormLineInput {
