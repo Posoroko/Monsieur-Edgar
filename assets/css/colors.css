@@ -34,8 +34,21 @@
     outline: 2px solid transparent;
     transition: 300ms ease;
 }
+.card {
+    position: relative;
+}
 .card:hover {
     background-color: var(--card-bg-hover);
-    outline: 2px solid var(--border-color-1);
     transition: 600ms ease;
+}
+.card:hover::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--border-color-1);
+    border-radius: 12px;
+    transition: 300ms ease;
 }

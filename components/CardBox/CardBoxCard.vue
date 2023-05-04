@@ -1,5 +1,5 @@
 <template>
-    <li class="card cardColor pointer flex column justifyBetween">
+    <li class="card cardColor flex column justifyBetween">
         <div class="imageFrame centered">
             <slot />
         </div>
@@ -28,9 +28,7 @@ const props = defineProps({
     aspect-ratio: 1/1;
     padding: 20px;
     border-radius: 10px;
-    
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    
 }
 
 .imageFrame {

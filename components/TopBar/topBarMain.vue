@@ -25,7 +25,6 @@
     .flexA {order: 1;}
     .flexB {
         width: 100%;
-        background: linear-gradient(0deg, rgba(20,39,38,0) 0%, rgba(0,0,0,1) 100%);
         margin-top: 10px;
         order: 3;
         display: flex;

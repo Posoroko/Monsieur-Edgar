@@ -1,7 +1,7 @@
 <template>
-    <h1 class="bodyH2 centered marTop100">hébergement</h1>
+    <h1 class="bodyH2 centered marTop100">Hébergement</h1>
     <div class="flex justifyCenter alignCenter gap20 marTop20">
-        <p>facturation: </p> 
+        <p>Facturation : </p> 
         <p class="button1 centered" :class="{'active' : planType == 'monthly'}" @click="planType = 'monthly'">mensuel</p>
         <p class="button1 centered" :class="{ 'active': planType == 'yearly' }" @click="planType = 'yearly'">annuel</p>
     </div>

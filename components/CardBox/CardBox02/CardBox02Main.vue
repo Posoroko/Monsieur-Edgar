@@ -1,21 +1,17 @@
 <template>
-    <CardBoxMain>
+    <div class="flex justifyCenter gap20 wrap">
+        <CardBoxCard :title="cardsContent.service.title" :text="cardsContent.service.text">
+            <IconService />
+        </CardBoxCard>
 
-        <div class="flex justifyCenter gap20 wrap">
-            <CardBoxCard :title="cardsContent.service.title" :text="cardsContent.service.text">
-                <IconDesign />
-            </CardBoxCard>
+        <CardBoxCard :title="cardsContent.accompagnement.title" :text="cardsContent.accompagnement.text">
+            <IconAccompagnement />
+        </CardBoxCard>
 
-            <CardBoxCard :title="cardsContent.accompagnement.title" :text="cardsContent.accompagnement.text">
-                <IconDeveloppement />
-            </CardBoxCard>
-
-            <CardBoxCard :title="cardsContent.prix.title" :text="cardsContent.prix.text">
-                <IconHebergement />
-            </CardBoxCard>
-        </div>
-
-    </CardBoxMain>
+        <CardBoxCard :title="cardsContent.prix.title" :text="cardsContent.prix.text">
+            <IconPrix />
+        </CardBoxCard>
+    </div>
 </template>
 
 <script setup>

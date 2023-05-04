@@ -15,10 +15,10 @@
     <main class="tarifMain mainWidth flex column alignCenter">
         <TarifsBoardMain />
 
-        <section id="detailBox"  class="mainWidth flex justifyCenter marTop100">
+        <section  class="mainWidth flex justifyCenter marTop100">
             <ul class="smallWidth flex column gap20">
-                <li class="marTop50">
-                    <h3 class="bodyH3">Sites standards</h3>
+                <li class="marTop50" id="detailBoxstandard">
+                    <h3 class="bodyH3 titlestandard">Site standard</h3>
                     <p class="marTop5 bodyText">
                         L’offre standard comporte : une page d’accueil, une page à propos présentant votre activité, une page détaillant chacun de vos services, ainsi qu’une page contact avec un formulaire de demande d’informations. 
                         Vous choisissez un modèle de site standard parmi notre offre et nous y injectons l'image de votre entreprise en y intégrant vos textes et vos photos. 
@@ -26,19 +26,18 @@
                     </p>
                 </li>
 
-                <li class="marTop50">
-                    <h3 class="bodyH3">Sites premiums</h3>
+                <li class="marTop50" id="detailBoxpremium">
+                    <h3 class="bodyH3 titlepremium">Site premium</h3>
                     <p class="marTop5 bodyText">
-                        En plus des pages de l’offre standard, les sites premium incluent une page supplémentaire pour rendre votre site plus vivant. Vous avez le choix parmi les pages suivantes : page actualité, agenda, blog, galerie photos ou portfolio. Grâce à votre espace administrateur facile à prendre en main, vous pouvez alimenter en contenu votre site et partager votre activité avec vos visiteurs.
+                        En plus des pages de l’offre standard, les sites premium incluent une page à contenu dynamique pour rendre votre site plus vivant. Vous avez le choix parmi les pages suivantes : page actualité, agenda, blog, galerie photos ou portfolio. Grâce à votre espace administrateur facile à prendre en main, vous pouvez alimenter en contenu votre site et partager votre activité avec vos visiteurs.
                         Vous choisissez un modèle de site premium parmi notre offre et nous y injectons l'image de votre entreprise en y intégrant vos textes et vos photos.
                         Vous avez également la possibilité d’ajouter toute autre page nécessaire à vos besoins (frais supplémentaires).
- 
                     </p>
                 
                 </li>
 
-                <li class="marTop50">
-                    <h3 class="bodyH3">Sites personnalisés</h3>
+                <li class="marTop50" id="detailBoxpersonnalisé">
+                    <h3 class="bodyH3 titlecustom">Site personnalisé</h3>
                     <p class="marTop5 bodyText">
                         Vos besoins demandent une solution plus précise ? Nous créons pour vous un site 100% unique réalisé à partir de l’offre standard ou premium, avec en plus un logo et une charte graphique personnalisés dans un design sur mesure basé sur l’image de votre entreprise. 
                     </p>
@@ -58,5 +57,14 @@
 .tarifsHeaderContent {
     width: min(750px, 90vw);
 
+}
+.titlestandard {
+    border-bottom: 2px solid var(--standard-color);
+}
+.titlepremium {
+    border-bottom: 2px solid var(--premium-color);
+}
+.titlecustom {
+    border-bottom: 2px solid var(--custom-color);
 }
 </style>

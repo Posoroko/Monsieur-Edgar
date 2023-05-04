@@ -1,7 +1,7 @@
 <template>
     <header class="contactHeader">
             <h2 class="contactMainBoxContentTextTitle">
-                Contactez-nous
+                Contactez nous
             </h2>
 
             <p class="contactMainBoxContentTextText bodyText">
@@ -63,7 +63,12 @@
                 </div>
 
                 <div class="contactFormLine flex column alignCenter relative">
-                    <p>J'accepte que mes données soient sauvegardées et utilisées pour me recontacter.</p>
+                    <p>
+                        Je consens à ce que ce site stocke mes informations envoyées afin qu’il puisse répondre à ma requête, comme décrit dans les 
+                        <NuxtLink class="underline" to="/mentions-legales">
+                            mentions légales *
+                        </NuxtLink>
+                    </p>
                     <label class="contactFormLineLabel" for="checkbox">
                         <span class="icon formCheckbox" v-if="formCheckbox" @click="formCheckbox = !formCheckbox">check_box</span>
                         <span class="icon formCheckbox" v-if="!formCheckbox" @click="formCheckbox = !formCheckbox">check_box_outline_blank</span>
@@ -89,14 +94,14 @@
         <div class="contactSeperator"></div>
 
         <section class="flex justifyCenter">
-            <div class="contactCard">
+            <div class="contactCard flex alignCenter">
                 <p>Monsieur Edgar est un service proposé par Studio Posoroko.</p>
-                <address class="flex column alignStart gap20">
+                <address class="flex column alignCenter gap20">
                     <a class="contactButton weight7" href="mailto:bonjour@monsieuredgar.com">bonjour@monsieuredgar.com</a>
                     
                     <a class="contactButton weight7" href="tel:+33695071264">06 95 07 12 64</a>
                     
-                    <ul>
+                    <ul class=" flex column alignCenter">
                         <li>Studio Posoroko</li>
 
                         <li>24 rue de Kerven</li>

@@ -12,7 +12,7 @@
                     qui vous ressemble.
                 </p>
                 <div class="flex">
-                    <NuxtLink to="/contact" class="ctaButton">parlez-nous de votre projet</NuxtLink>
+                    <NuxtLink to="/contact" class="ctaButton">Parlez-nous de votre projet</NuxtLink>
                 </div>
             </div>
 

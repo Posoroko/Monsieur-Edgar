@@ -1,6 +1,6 @@
 <template>
     <div class="marTop50">
-        <h1 class="bodyH2 centered marTop20">développement</h1>
+        <h1 class="bodyH2 centered marTop20">Développement</h1>
         <div class="tarifsBoard marTop20 flex justifyCenter gap20 wrap">
             <TarifsBoardCard 
                 :title="standardContent.title"
@@ -53,7 +53,7 @@ const customContent = {
     title: "personnalisé",
     from: true,
     price: 1750,
-    topCardText: "L'offre standard (extesible au besoin), un design sur mesure, et des fonctionnalités adaptées à votre activité."
+    topCardText: "L'offre standard (extensible au besoin), un design sur mesure, et des fonctionnalités adaptées à votre activité."
 }
 
 const standardSpecs = [
@@ -149,7 +149,7 @@ const premiumSpecs = [
         plan: "premium"
     },
     {
-        text: "Page dynamique au choix",
+        text: "Page à contenu dynamique au choix",
         value: true,
         icon: "description",
         plan: "premium"

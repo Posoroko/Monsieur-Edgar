@@ -41,7 +41,7 @@
             </ul>
         </div>
         <div class="detailBox flex justifyCenter">
-            <a class="detailButton flex alignCenter gap5" href="#detailBox">en savoir plus <span class="icon">arrow_downward</span></a>
+            <a class="detailButton flex alignCenter gap5" :href="`#detailBox${title}`">en savoir plus <span class="icon">arrow_downward</span></a>
         </div>
     </div>
 </template>

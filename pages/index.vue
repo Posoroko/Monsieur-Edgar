@@ -47,6 +47,7 @@
     height: 50vh;
     margin: 100px auto;
     overflow: hidden;
+    padding-left: 40px
 }
 .bodySceneBox img {
     height: 100%;

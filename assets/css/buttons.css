@@ -49,9 +49,10 @@
 
 .contactButton {
     font-size: clamp(16px, 1.5vw, 18px);
-    font-weight: 700;
-    background-color: var(--bg-main);
-    padding: 10px 15px;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: var(--bg-main); */
+    /* padding: 10px 15px; */
     border-radius: 10px;
     cursor: pointer;
     opacity: 1;
@@ -79,10 +80,25 @@
     background-color: var(--bg-main);
     padding:15px 25px;
     border-radius: 10px;
-    outline: 5px double var(--funky-main);
+    border: 2px solid var(--funky-main);
     cursor: pointer;
     pointer-events: all;
+    transition: 300ms ease;
+    position: relative;
 }
 .ctaButton:hover {
     background-color: var(--bg-secondary);
+    transition: 300ms ease;
+}
+
+.ctaButton:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px; 
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 1px solid var(--funky-main);
+    border-radius: 12px;
+    transition: 300ms ease;
 }

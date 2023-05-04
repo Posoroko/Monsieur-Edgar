@@ -8,7 +8,7 @@
     </header>
     
     <main class="smallWidth flex column gap20 marTop100">
-        <h2 class="bodyH2 pad10">Qui est Monsieur Edgar?</h2>
+        <h2 class="bodyH2 pad10">Qui est Monsieur Edgar ?</h2>
         
         <div>
             <p class="bodyText pad10">
@@ -24,7 +24,7 @@
         <h2 class="bodyH2 marTop50 pad10">Studio Posoroko et Eric Podhorecki</h2>
         <p class="bodyText pad10">
             Eric Podhorecki a quitté son Québec natal pour s'installer en Centre-Bretagne il y a plus de vingt ans.  Après avoir travaillé comme accessoiriste de cinéma, 
-            chef de cuisine et proffesseur de collège,  il s'est reconverti en développeur web afin de vivre de sa passion pour l'informatique, les nouvelles technologies et le design.  
+            chef de cuisine et professeur de collège,  il s'est reconverti en développeur web afin de vivre de sa passion pour l'informatique, les nouvelles technologies et le design.  
             Il a créé <b>Studio Posoroko</b> sous le statut d'auto-entrepreneur.
         </p>
     </main>

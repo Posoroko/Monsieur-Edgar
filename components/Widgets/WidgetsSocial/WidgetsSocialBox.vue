@@ -1,6 +1,8 @@
 <template>
     <div class="socialLogosBox h100 flex justifyBetween alignCenter gap20">
-        <WidgetsSocialFacebook />
+        <a href="https://www.facebook.com/profile.php?id=100092204940677">
+            <WidgetsSocialFacebook />
+        </a>
         <!-- <WidgetsSocialFacebook /> -->
         <!-- <WidgetsSocialFacebook /> -->
     </div>

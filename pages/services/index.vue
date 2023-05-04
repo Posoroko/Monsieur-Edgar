@@ -1,6 +1,6 @@
 <template>
     <header class="header servicesHeader flex column alignCenter gap20 relative">
-        <h1 class="headerMainTitle">Nos Services</h1>
+        <h1 class="headerMainTitle">Nos services</h1>
         <p class="headerText smallWidth">
             Que vous ayez besoin d’un service complet ou simplement de conseils, nous sommes à votre écoute pour trouver la solution qui conviendra le mieux à votre projet.
         </p>
