@@ -18,6 +18,9 @@
                         Nom
                     </label>
                     <input class="contactFormLineInput" type="text" name="name" id="name">
+                    <div class="centered">
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.name">Votre nom doit contenir entre 1 et 50 caractères.</p>
+                    </div>
                 </div>
 
                 <div class="contactFormLine">
@@ -25,6 +28,9 @@
                         Email
                     </label>
                     <input class="contactFormLineInput" type="email" name="email" id="email">
+                    <div class="centered">
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.email">Votre adresse email n'est pas au bon format.</p>
+                    </div>
                 </div>
 
                 <div class="contactFormLine">
@@ -32,6 +38,9 @@
                         Téléphone
                     </label>
                     <input class="contactFormLineInput" type="text" name="phone" id="phone">
+                    <div class="centered">
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.email">Votre numéro de téléphone doit contenir entre 10 et 15 caractères.</p>
+                    </div>
                 </div>
 
                 <div class="contactFormLine">
@@ -39,6 +48,9 @@
                         Quel est votre projet ?
                     </label>
                     <textarea class="contactFormLineInput" name="message" id="message" cols="30" rows="10"></textarea>
+                    <div class="centered">
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.message">Votre message doit contenir entre 1 et 500 caractères.</p>
+                    </div>
                 </div>
 
                 <div class="contactFormLine flex column gap10">
@@ -60,6 +72,9 @@
                         </div>
 
                     </div>
+                    <div class="centered">
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.contactPreference">Veuillez choisir un moyen de contact.</p>
+                    </div>
                 </div>
 
                 <div class="contactFormLine flex column alignCenter relative">
@@ -75,10 +90,13 @@
                     </label>
                     <input class="hiddenFormCheckbox" id="checkbox" type="checkbox">
                 </div>
+                <div class="centered">
+                    <p class="responseText fieldResponseText" v-if="fieldErrors.termsAccepted">Veuillez accepter les conditions d'utilisation.</p>
+                </div>
 
-                <p class="responseText" v-if="message"> {{ message }} </p>
+                <p class="responseText globalError" v-if="message"> {{ message }} </p>
 
-                <p class="responseText" v-if="error"> {{ error }} </p>
+                <p class="responseText globalError" v-if="error"> {{ error }} </p>
 
                 <div class="contactFormLine centered">
                     <button class="submitButton" @click.prevent="handleSubmit">
@@ -125,24 +143,84 @@ const isPending = ref(false)
 const error = ref(null)
 const message = ref(null)
 
+const fieldErrors = ref({
+    name: false,
+    email: false,
+    telephone: false,
+    message: false,
+    contactPreference: false,
+    termsAccepted: false
+})
+const resetFieldErrors = () => {
+    fieldErrors.value.name = false
+    fieldErrors.value.email = false
+    fieldErrors.value.telephone = false
+    fieldErrors.value.message = false
+    fieldErrors.value.contactPreference = false
+    fieldErrors.value.termsAccepted = false
+}
+
+const formValidation = (form) => {
+    
+    let problem = false
+    
+    if(form.name.length > 50 || !form.name) { 
+        fieldErrors.value.name = true
+        problem = true
+    }
+    if (form.email.length > 100 || !form.email) {
+        fieldErrors.value.email = true
+        problem = true
+    }
+    if (form.telephone.length > 100 || !form.telephone) {
+        fieldErrors.value.telephone = true
+        problem = true
+    }
+    if (form.message.length > 500 || !form.message) {
+        fieldErrors.value.message = true
+        problem = true
+    }
+    if (!form.contactPreference) {
+        fieldErrors.value.contactPreference = true
+        problem = true
+    }
+    if (!form.termsAccepted) {
+        fieldErrors.value.termsAccepted = true
+        problem = true
+    }
+    if(problem) {
+        error.value = "Merci de vérifier les champs marqués d'une erreur."
+        return false
+    }
+
+    return true
+}
 
 
 const handlecontactPreference = (choice) => {
     contactPreference.value = choice
 }
 const handleSubmit = async () => {
-    isPending.value = true
-    error.value = false
+    resetFieldErrors()
     const formData = {
         name: contactForm.value.name.value,
         email: contactForm.value.email.value,
-        phone: contactForm.value.phone.value,
+        telephone: contactForm.value.phone.value,
         message: contactForm.value.message.value,
         contactPreference: contactPreference.value,
         termsAccepted: formCheckbox.value
     }
 
+    if (!formValidation(formData)) {
+        return
+    }
+
+    isPending.value = true
+    error.value = false
+  
+
     const response = await postDataToApi(formData)
+
     if(!response.data) {
         error.value = "Désolé pour l'inconvénient, un problème est survenu. Veuillez réessayer plus tard ou nous contacter par un autre moyen."
     }
@@ -226,11 +304,19 @@ textarea.contactFormLineInput {
     opacity: 0;
 }
 .responseText {
-    font-size: 20px;
-    font-weight: 700;
+    
     text-align: center;
     padding: 10px;
     border: 1px solid var(--funky-main);
     border-radius: 10px;
+}
+.fieldResponseText {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.globalError {
+    font-size: 20px;
+    font-weight: 700;
 }
 </style>

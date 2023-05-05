@@ -8,7 +8,7 @@
     <div class="hostingCardBox marTop20">
         
 
-        <div class="flex justifyCenter gap10 wrap">
+        <div class="flex justifyCenter gap20 wrap">
             <div class="hostingCard flex column gap10" v-for="plan in plans" :key="plan.id">
                 <h1 class="tarifTitle centered">{{  plan.title }}</h1>
 
@@ -37,15 +37,15 @@ const plans = {
     standard: {
         id: 0,
         title: 'Site standard',
-        monthly: 15,
-        yearly: 12,
+        monthly: 17,
+        yearly: 12.50,
         from: false
     },
     premium: {
         id: 1,
         title: 'Site premium',
-        monthly:22,
-        yearly: 17,
+        monthly:20,
+        yearly: 15,
         from: true
     },
     custom: {
