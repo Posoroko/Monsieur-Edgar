@@ -39,7 +39,7 @@
                     </label>
                     <input class="contactFormLineInput" type="text" name="phone" id="phone">
                     <div class="centered">
-                        <p class="responseText fieldResponseText" v-if="fieldErrors.email">Votre numéro de téléphone doit contenir entre 10 et 15 caractères.</p>
+                        <p class="responseText fieldResponseText" v-if="fieldErrors.telephone">Votre numéro de téléphone doit contenir entre 10 et 15 caractères.</p>
                     </div>
                 </div>
 
@@ -192,7 +192,7 @@ const formValidation = (form) => {
         error.value = "Merci de vérifier les champs marqués d'une erreur."
         return false
     }
-
+    console.log('ok form')
     return true
 }
 
@@ -221,14 +221,17 @@ const handleSubmit = async () => {
 
     const response = await postDataToApi(formData)
 
-    if(!response.data) {
+    if(response.ok == true) {
+        message.value = "Nous avons bien reçu votre message, nous vous recontacterons dans les plus brefs délais."
+        
+    } else {
         error.value = "Désolé pour l'inconvénient, un problème est survenu. Veuillez réessayer plus tard ou nous contacter par un autre moyen."
     }
     isPending.value = false
-    message.value = "Nous avons bien reçu votre message, nous vous recontacterons dans les plus brefs délais."
 }
 
 const postDataToApi = async (data) => {
+    const _res = null
     const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
@@ -236,7 +239,8 @@ const postDataToApi = async (data) => {
         },
         body: JSON.stringify(data),
     })
-    return response.json()
+
+    return response
 }
 
 </script>
