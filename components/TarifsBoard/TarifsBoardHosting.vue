@@ -51,8 +51,8 @@ const plans = {
     custom: {
         id: 2,
         title: 'Site personnalisé',
-        monthly: 15,
-        yearly: 12,
+        monthly: 17,
+        yearly: 12.50,
         from: true
     }
 }
