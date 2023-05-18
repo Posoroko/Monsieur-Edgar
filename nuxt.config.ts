@@ -14,9 +14,9 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://monsieuredgar.com',
-            siteName: 'Monsieur Edgar',
-            title: 'Monsieur Edgar',
-            siteDescription: 'Monsieur Edgar, service web complet pour les petites entreprises',
+            siteName: 'Monsieur Edgar, sites Web en Centre-Bretagne',
+            title: 'Monsieur Edgar, création de sites Web à Carhaix-Plouguer, Centre-Bretagne, Finistère',
+            siteDescription: "Création de sites Web à Carhaix-PLouguer, Centre-Bretagne, Finistère.  Monsieur Edgar propose le design, le développement et l'hébergement de sites web pour artisans et petites entreprises",
             language: 'fr-FR',
         }
     },
@@ -62,12 +62,10 @@ export default defineNuxtConfig({
             viewport: 'width=500, initial-scale=1',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                // { name: 'description', content: 'Site de la Mairie de Poullaouën.' },
-                // { name: "og:description", content: 'Site de la Mairie de Poullaouën.' },
-                // { name: "og:site_name", content: "Mairie de Poullaouen" },
+                { name: 'description', content: "Création de sites Web à Carhaix-PLouguer, Centre-Bretagne, Finistère.  Monsieur Edgar propose le design, le développement et l'hébergement de sites web pour artisans et petites entreprises" },
+                { name: "og:description", content: "Création de sites Web à Carhaix-PLouguer, Centre-Bretagne, Finistère.  Monsieur Edgar propose le design, le développement et l'hébergement de sites web pour artisans et petites entreprises" },
+                { name: "og:site_name", content: 'Monsieur Edgar, création de sites Web à Carhaix-Plouguer, Centre-Bretagne, Finistère' },
                 { name: "og:type", content: "website" },
-                // { name: "og:image", content: "@carine_leduc" },
-                // { name: "og:url", content: "https://mairie-poullaouen.fr" },
             ],
         }
     }
