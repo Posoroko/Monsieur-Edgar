@@ -13,6 +13,21 @@
     </header>
 
     <main class="tarifMain mainWidth flex column alignCenter">
+
+
+        <section class="marTop100">
+            <h1 class="bodyH2 centered marTop20">Référencement et présence en ligne</h1>
+            <div class="marTop50 flex justifyCenter">
+                <TarifsBoardCard 
+                    :name='googleBusiness.name'
+                    :price='googleBusiness.price'
+                    :topCardText='googleBusiness.topCardText'
+                    :specs='googleBusiness.specs'
+                    />
+            </div>
+        </section>
+
+
         <TarifsBoardMain />
 
         <section  class="mainWidth flex justifyCenter marTop100">
@@ -49,6 +64,12 @@
         
     </main>
 </template>
+
+<script setup>
+import { googleBusiness } from "@/assets/content/googleBusiness"
+
+
+</script>
 
 <style scoped>
 .tarifUl li{

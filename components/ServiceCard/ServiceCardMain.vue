@@ -6,14 +6,23 @@
 
         <div class="contentBox h100 flex column">
             <ServiceCardContent :title="title" :text="text" />
+            <div class="buttonBox flex justifyEnd" v-if="linkOn">
+                <NuxtLink class="moreButton button2" :to="link">
+                    lire...
+                </NuxtLink>
+            </div>
         </div>
+
+        
     </div>
 </template>
 
 <script setup>
 const props = defineProps({
     title: String,
-    text: String
+    text: String,
+    link: String,
+    linkOn: Boolean
 })
 </script>
 

@@ -1,8 +1,12 @@
 <template>
     <div class="tarifCardBox flex column gap10">
         <div class="topBox flex column alignCenter gap10">
-            <h2 class="tarifTitle flex justifyCenter alignCenter relative" :class="`tarifTitle${title}`">
+            <h2 v-if="title" class="tarifTitle flex justifyCenter alignCenter relative" :class="`tarifTitle${title}`">
                 {{ `Site ${title}` }}
+            </h2>
+
+            <h2 v-if="name" class="tarifTitle google textAlignCenter flex justifyCenter alignCenter relative" :class="`tarifTitle${title}`">
+                {{ name }}
             </h2>
 
             <p class="servicePriceLine">
@@ -17,7 +21,7 @@
         <div class="tarifCard flex column" v-if="!customText">
             <ul class="specList">
                 <li class="specLineBox" v-for="spec in specs">
-                    <span class="specLineContent flex justifyStart gap20"  v-if="spec.value">
+                    <span class="specLineContent flex justifyStart gap20" v-if="spec.value">
                         <span class="specLineContentText flex alignCenter gap10">
                             <span class="specLineText raleway">{{ spec.text }}</span>
                         </span>
@@ -40,7 +44,7 @@
                 </li>
             </ul>
         </div>
-        <div class="detailBox flex justifyCenter">
+        <div class="detailBox flex justifyCenter" v-if="title">
             <a class="detailButton flex alignCenter gap5" :href="`#detailBox${title}`">en savoir plus <span class="icon">arrow_downward</span></a>
         </div>
     </div>
@@ -50,13 +54,14 @@
 
 const props = defineProps({
     title: String,
+    name: String,
     from: Boolean,
     price: Number,
     topCardText: String,
     specs: Array,
     customText: String
 })
-console.log(props.specs)
+console.log( props.name, props.specs)
 
 </script>
 
@@ -93,6 +98,7 @@ console.log(props.specs)
     font-weight: 700;
     color: var(--text-color-1);
     padding: 10px 0;
+    text-align: center;
 }
 .tarifTitlestandard {
         border-bottom: 1px solid green;
@@ -102,6 +108,9 @@ console.log(props.specs)
 }
 .tarifTitlepersonnalisé {
     border-bottom: 1px solid var(--custom-color);
+}
+.google {
+    border-bottom: 1px solid green;
 }
 .topBoxText {
     font-size: 14px;

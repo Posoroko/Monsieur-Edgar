@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     extends: [
         'nuxt-seo-kit'
     ],
+    modules: [
+        '@nuxt/content'
+    ],
     runtimeConfig: {
         public: {
             siteUrl: 'https://monsieuredgar.com',

@@ -25,7 +25,16 @@
     font-weight: 700;
     transition: 500ms  ease;
 }
-
+.button2 {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bg-main);
+    border: 1px solid var(--funky-main);
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
 .submitButton {
     font-size: 18px;
     font-weight: 700;

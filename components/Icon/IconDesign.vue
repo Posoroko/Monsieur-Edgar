@@ -72,7 +72,7 @@
 
 </template>
 
-<style setup>
+<style scoped>
     .st0{fill:#FFFFFF;}
     .st1{fill:#27251E;}
     .st2{fill:#F6A75F;}
