@@ -37,22 +37,22 @@ const plans = {
     standard: {
         id: 0,
         title: 'Site standard',
-        monthly: 17,
-        yearly: 12.50,
+        monthly: 25,
+        yearly: 20,
         from: false
     },
     premium: {
         id: 1,
         title: 'Site premium',
-        monthly:20,
-        yearly: 15,
+        monthly:30,
+        yearly: 25,
         from: true
     },
     custom: {
         id: 2,
         title: 'Site personnalisé',
-        monthly: 17,
-        yearly: 12.50,
+        monthly: 25,
+        yearly: 20,
         from: true
     }
 }
